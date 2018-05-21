@@ -1,0 +1,33 @@
+{
+  "name": "remote-import",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "test": "NODE_ENV=test nyc node_modules/.bin/mocha './tests/*.test.js' --timeout=3000 --exit",
+    "lint": "./node_modules/.bin/eslint ./src"
+  },
+  "author": "Alex",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "csv-parse": "^2.4.0",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "https": "^1.0.0",
+    "mongoose": "^5.1.1",
+    "valid-url": "^1.0.9"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "mocha": "^5.2.0",
+    "nyc": "^11.8.0"
+  }
+}
